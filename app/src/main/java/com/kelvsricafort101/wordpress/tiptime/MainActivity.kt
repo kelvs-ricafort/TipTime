@@ -28,6 +28,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import com.kelvsricafort101.wordpress.tiptime.ui.theme.TipTimeTheme
@@ -82,6 +83,10 @@ fun TipTimeLayout(
             label = R.string.bill_amount,
             value = amountInput,
             onValueChanged = { amountInput = it },
+            keyboardOptions = KeyboardOptions.Default.copy(
+                keyboardType = KeyboardType.Number,
+                imeAction = ImeAction.Next
+            ),
             modifier = Modifier
                 .padding(bottom = dimensionResource(R.dimen.textfield_bottom_padding))
                 .fillMaxWidth()
@@ -90,6 +95,10 @@ fun TipTimeLayout(
             label = R.string.how_was_the_service,
             value = tipInput,
             onValueChanged = { tipInput = it },
+            keyboardOptions = KeyboardOptions.Default.copy(
+                keyboardType = KeyboardType.Number,
+                imeAction = ImeAction.Done
+            ),
             modifier = Modifier
                 .padding(bottom = dimensionResource(R.dimen.textfield_bottom_padding))
                 .fillMaxWidth()
@@ -106,6 +115,7 @@ fun TipTimeLayout(
 fun EditNumberField(
     @StringRes label: Int,
     value: String,
+    keyboardOptions: KeyboardOptions,
     onValueChanged: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -114,9 +124,7 @@ fun EditNumberField(
         onValueChange = onValueChanged,
         singleLine = true,
         label = { Text(text = stringResource(label)) },
-        keyboardOptions = KeyboardOptions(
-            keyboardType = KeyboardType.Number
-        ),
+        keyboardOptions = keyboardOptions,
         modifier = modifier
     )
 }
