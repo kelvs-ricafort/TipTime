@@ -4,4 +4,5 @@
     <dimen name="bottom_padding">16dp</dimen>
     <dimen name="spacer_height">150dp</dimen>
     <dimen name="textfield_bottom_padding">32dp</dimen>
+    <dimen name="row_size">48dp</dimen>
 </resources>
