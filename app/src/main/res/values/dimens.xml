@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horizontal_padding">40dp</dimen>
+    <dimen name="bottom_padding">16dp</dimen>
+    <dimen name="spacer_height">150dp</dimen>
+</resources>
