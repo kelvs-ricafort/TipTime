@@ -3,4 +3,5 @@
     <dimen name="horizontal_padding">40dp</dimen>
     <dimen name="bottom_padding">16dp</dimen>
     <dimen name="spacer_height">150dp</dimen>
+    <dimen name="textfield_bottom_padding">32dp</dimen>
 </resources>
