@@ -4,5 +4,9 @@
     <dimen name="bottom_padding">16dp</dimen>
     <dimen name="spacer_height">150dp</dimen>
     <dimen name="textfield_bottom_padding">32dp</dimen>
+    <dimen name="divider_padding">8dp</dimen>
     <dimen name="row_size">48dp</dimen>
+    <dimen name="icon_size">100dp</dimen>
+    <dimen name="vertical_arrangement">8dp</dimen>
+    <dimen name="horizontal_arrangement">12dp</dimen>
 </resources>
