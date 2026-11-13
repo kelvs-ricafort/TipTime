@@ -9,4 +9,5 @@
     <dimen name="icon_size">100dp</dimen>
     <dimen name="vertical_arrangement">8dp</dimen>
     <dimen name="horizontal_arrangement">12dp</dimen>
+    <dimen name="spacedBy">24dp</dimen>
 </resources>

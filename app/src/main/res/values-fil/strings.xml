@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tip Time</string>
+    <string name="calculate_tip">Kalkulahin ang Tip</string>
+    <string name="bill_amount">Halaga ng Bill</string>
+    <string name="tip_amount">Halaga ng tip</string>
+    <string name="how_was_the_service">Porsyento ng Tip</string>
+    <string name="round_up_tip">Round-up tip?</string>
+    <string name="about_app">Tungkol sa App</string>
+    <string name="about_app_description">Isang simple at maginhawang tip calculator na makakatulong sa iyong kalkulahin ang mga tip at hatiin ang mga bayarin nang madali.</string>
+    <string name="app_info">Impormasyon ng App</string>
+    <string name="version">Bersyon: %1$s</string>
+    <string name="build">Build: %1$d</string>
+    <string name="app_features">Mga Tampok ng App</string>
+    <string name="easy_tip_calculation">Madaling Pagkalkula ng Tip</string>
+    <string name="custom_tip_percentage">Porsyento ng Pasadyang Tip</string>
+    <string name="split_bill_calculation">Pagkalkula ng hating singil</string>
+    <string name="dark_mode_support">Suporta sa Madilim na Mode</string>
+    <string name="multiple_language_support">Suporta sa Maramihang Wika</string>
+    <string name="customizable_settings">Mga Nako-customize na Setting</string>
+    <string name="developer_information">Impormasyon ng Nag-develop</string>
+    <string name="developer_info">Impormasyon ng Nag-develop</string>
+    <string name="developer">Developer: %1$s</string>
+    <string name="developer_name">Kelvin Ricafort</string>
+    <string name="settings">Mga Setting</string>
+    <string name="appearance">Hitsura</string>
+    <string name="dark_mode">Madilim na Mode</string>
+    <string name="dark_mode_description">Gumamit ng madilim na tema ng kulay sa buong app.</string>
+    <string name="language">Wika</string>
+    <string name="language_english">Ingles</string>
+    <string name="language_filipino">Pilipino</string>
+    <string name="language_spanish">Espanyol</string>
+</resources>

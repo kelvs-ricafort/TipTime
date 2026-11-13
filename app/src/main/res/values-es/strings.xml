@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tip Time</string>
+    <string name="calculate_tip">Calcular la propina</string>
+    <string name="bill_amount">Monto de la cuenta</string>
+    <string name="tip_amount">Cantidad de propina</string>
+    <string name="how_was_the_service">Porcentaje de propina</string>
+    <string name="round_up_tip">¿Consejo para redondear?</string>
+    <string name="about_app">Acerca de la aplicación</string>
+    <string name="about_app_description">Una calculadora de propinas sencilla y práctica que te ayuda a calcular las propinas y dividir la cuenta fácilmente.</string>
+    <string name="app_info">Información de la aplicación</string>
+    <string name="version">Versión: %1$s</string>
+    <string name="build">Construir: %1$d</string>
+    <string name="app_features">Características de la aplicación</string>
+    <string name="easy_tip_calculation">Cálculo sencillo de propinas</string>
+    <string name="custom_tip_percentage">Porcentaje de propina personalizado</string>
+    <string name="split_bill_calculation">Cálculo de la división de la factura</string>
+    <string name="dark_mode_support">Compatibilidad con el modo oscuro</string>
+    <string name="multiple_language_support">Soporte para varios idiomas</string>
+    <string name="customizable_settings">Configuración personalizable</string>
+    <string name="developer_information">Información para desarrolladores</string>
+    <string name="developer_info">Información para desarrolladores</string>
+    <string name="developer">Revelador: %1$s</string>
+    <string name="developer_name">Kelvin Ricafort</string>
+    <string name="settings">Configuración</string>
+    <string name="appearance">Apariencia</string>
+    <string name="dark_mode">Modo oscuro</string>
+    <string name="dark_mode_description">Utiliza un tema de color oscuro en toda la aplicación.</string>
+    <string name="language">Idioma</string>
+    <string name="language_english">Inglés</string>
+    <string name="language_filipino">Filipino</string>
+    <string name="language_spanish">Español</string>
+</resources>
