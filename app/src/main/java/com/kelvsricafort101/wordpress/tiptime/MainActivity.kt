@@ -41,6 +41,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
+import com.kelvsricafort101.wordpress.tiptime.ui.TipTimeApp
 import com.kelvsricafort101.wordpress.tiptime.ui.theme.TipTimeTheme
 import java.text.NumberFormat
 
@@ -54,7 +55,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    TipTimeLayout()
+                    TipTimeApp()
                 }
             }
         }

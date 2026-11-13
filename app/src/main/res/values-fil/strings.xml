@@ -6,6 +6,7 @@
     <string name="tip_amount">Halaga ng tip</string>
     <string name="how_was_the_service">Porsyento ng Tip</string>
     <string name="round_up_tip">Round-up tip?</string>
+    <string name="back_button">Balik</string>
     <string name="about_app">Tungkol sa App</string>
     <string name="about_app_description">Isang simple at maginhawang tip calculator na makakatulong sa iyong kalkulahin ang mga tip at hatiin ang mga bayarin nang madali.</string>
     <string name="app_info">Impormasyon ng App</string>

@@ -6,6 +6,7 @@
     <string name="tip_amount">Cantidad de propina</string>
     <string name="how_was_the_service">Porcentaje de propina</string>
     <string name="round_up_tip">¿Consejo para redondear?</string>
+    <string name="back_button">Atrás</string>
     <string name="about_app">Acerca de la aplicación</string>
     <string name="about_app_description">Una calculadora de propinas sencilla y práctica que te ayuda a calcular las propinas y dividir la cuenta fácilmente.</string>
     <string name="app_info">Información de la aplicación</string>
