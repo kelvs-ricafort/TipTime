@@ -21,8 +21,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.kelvsricafort101.wordpress.tiptime.R
 import com.kelvsricafort101.wordpress.tiptime.data.AppLanguage
+import com.kelvsricafort101.wordpress.tiptime.navigation.NavigationDestination
 import com.kelvsricafort101.wordpress.tiptime.ui.TipTimeTopAppBar
 import com.kelvsricafort101.wordpress.tiptime.ui.theme.TipTimeTheme
+
+object SettingsDestination: NavigationDestination {
+    override val route = "settings"
+    override val titleRes = R.string.settings
+}
 
 @Composable
 fun SettingsScreen(
@@ -37,7 +43,7 @@ fun SettingsScreen(
         modifier = modifier,
         topBar = {
             TipTimeTopAppBar(
-                title = "Settings",
+                title = stringResource(SettingsDestination.titleRes),
                 canNavigateBack = true,
                 navigateUp = onNavigateUp
             )

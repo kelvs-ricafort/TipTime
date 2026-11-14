@@ -3,9 +3,10 @@
     <string name="app_name">Tip Time</string>
     <string name="calculate_tip">Calcular la propina</string>
     <string name="bill_amount">Monto de la cuenta</string>
-    <string name="tip_amount">Cantidad de propina</string>
+    <string name="tip_amount">Cantidad de propina: €0.00</string>
     <string name="how_was_the_service">Porcentaje de propina</string>
     <string name="round_up_tip">¿Consejo para redondear?</string>
+    <string name="home">Casa</string>
     <string name="back_button">Atrás</string>
     <string name="about_app">Acerca de la aplicación</string>
     <string name="about_app_description">Una calculadora de propinas sencilla y práctica que te ayuda a calcular las propinas y dividir la cuenta fácilmente.</string>
@@ -28,6 +29,7 @@
     <string name="dark_mode">Modo oscuro</string>
     <string name="dark_mode_description">Utiliza un tema de color oscuro en toda la aplicación.</string>
     <string name="language">Idioma</string>
+    <string name="open_navigation_drawer">Abrir el cajón de navegación</string>
     <string name="language_english">Inglés</string>
     <string name="language_filipino">Filipino</string>
     <string name="language_spanish">Español</string>

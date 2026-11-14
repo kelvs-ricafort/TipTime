@@ -6,6 +6,7 @@
     <string name="tip_amount">Tip Amount: %s</string>
     <string name="how_was_the_service">Tip Percentage</string>
     <string name="round_up_tip">Round Up Tip?</string>
+    <string name="home">Home</string>
     <string name="back_button">Back</string>
 
     <!-- About Screen -->
@@ -33,6 +34,7 @@
     <string name="dark_mode">Dark Mode</string>
     <string name="dark_mode_description">Use a dark color theme throughout the app.</string>
     <string name="language">Language</string>
+    <string name="open_navigation_drawer">Open Navigation Drawer</string>
 
     <!-- Language Options -->
     <string name="language_english">English</string>

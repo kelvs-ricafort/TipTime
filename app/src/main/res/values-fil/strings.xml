@@ -3,9 +3,10 @@
     <string name="app_name">Tip Time</string>
     <string name="calculate_tip">Kalkulahin ang Tip</string>
     <string name="bill_amount">Halaga ng Bill</string>
-    <string name="tip_amount">Halaga ng tip</string>
+    <string name="tip_amount">Halaga ng tip: PHP 0.00</string>
     <string name="how_was_the_service">Porsyento ng Tip</string>
     <string name="round_up_tip">Round-up tip?</string>
+    <string name="home">Tahanan</string>
     <string name="back_button">Balik</string>
     <string name="about_app">Tungkol sa App</string>
     <string name="about_app_description">Isang simple at maginhawang tip calculator na makakatulong sa iyong kalkulahin ang mga tip at hatiin ang mga bayarin nang madali.</string>
@@ -28,6 +29,7 @@
     <string name="dark_mode">Madilim na Mode</string>
     <string name="dark_mode_description">Gumamit ng madilim na tema ng kulay sa buong app.</string>
     <string name="language">Wika</string>
+    <string name="open_navigation_drawer">Buksan ang Navigation Drawer</string>
     <string name="language_english">Ingles</string>
     <string name="language_filipino">Pilipino</string>
     <string name="language_spanish">Espanyol</string>
