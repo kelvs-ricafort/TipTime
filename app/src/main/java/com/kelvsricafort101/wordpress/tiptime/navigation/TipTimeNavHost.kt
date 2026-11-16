@@ -51,6 +51,7 @@ fun TipTimeNavHost(
             composable(route = HomeDestination.route) {
                 HomeScreen(
                     openDrawer = openDrawer,
+                    appLanguage = settingsUiState.appLanguage,
                     modifier = modifier
                 )
             }

@@ -5,7 +5,6 @@ import androidx.annotation.StringRes
 import androidx.annotation.VisibleForTesting
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -43,12 +42,13 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import com.kelvsricafort101.wordpress.tiptime.R
+import com.kelvsricafort101.wordpress.tiptime.data.AppLanguage
 import com.kelvsricafort101.wordpress.tiptime.navigation.NavigationDestination
 import com.kelvsricafort101.wordpress.tiptime.ui.TipTimeTopAppBar
 import com.kelvsricafort101.wordpress.tiptime.ui.theme.TipTimeTheme
 import java.text.NumberFormat
+import java.util.Locale
 
 object HomeDestination: NavigationDestination {
     override val route = "home"
@@ -61,6 +61,7 @@ object HomeDestination: NavigationDestination {
 @Composable
 fun HomeScreen(
     openDrawer: () -> Unit,
+    appLanguage: AppLanguage,
     modifier: Modifier = Modifier
 ) {
     val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
@@ -86,8 +87,8 @@ fun HomeScreen(
         }
     ) { innerPadding ->
         HomeBody(
-            modifier = modifier,
-            contentPadding = innerPadding
+            modifier = modifier.padding(innerPadding),
+            appLanguage = appLanguage
         )
     }
 }
@@ -95,7 +96,7 @@ fun HomeScreen(
 @Composable
 private fun HomeBody(
     modifier: Modifier = Modifier,
-    contentPadding: PaddingValues = PaddingValues(0.dp)
+    appLanguage: AppLanguage = AppLanguage.ENGLISH
 ) {
     var amountInput by remember { mutableStateOf("") }
     var tipInput by remember { mutableStateOf("") }
@@ -104,10 +105,9 @@ private fun HomeBody(
     val amount = amountInput.toDoubleOrNull() ?: 0.0
     val tipPercent = tipInput.toDoubleOrNull() ?: 0.0
 
-    val tip = calculateTip(amount, tipPercent, roundUp)
+    val tip = calculateTip(amount, tipPercent, roundUp, locale = appLanguage.locale)
     Column(
         modifier = modifier
-            .padding(contentPadding)
             .statusBarsPadding()
             .padding(horizontal = dimensionResource(R.dimen.horizontal_padding))
             .verticalScroll(rememberScrollState())
@@ -222,22 +222,23 @@ fun RoundTheTipRow(
 internal fun calculateTip(
     amount: Double,
     tipPercent: Double = 15.0,
-    roundUp: Boolean
+    roundUp: Boolean,
+    locale: Locale = Locale.getDefault()
 ): String {
     var tip = tipPercent / 100 * amount
     if (roundUp) {
         tip = kotlin.math.ceil(tip)
     }
-    return NumberFormat.getCurrencyInstance().format(tip)
+    return NumberFormat.getCurrencyInstance(locale).format(tip)
 }
 
 @Preview(showBackground = true)
 @Composable
-fun TipTimeLayoutPreview() {
+fun HomeScreenPreview() {
     TipTimeTheme(darkTheme = false) {
         Surface {
-            HomeScreen(
-                openDrawer = {}
+            HomeBody(
+                appLanguage = AppLanguage.ENGLISH
             )
         }
     }
@@ -245,11 +246,11 @@ fun TipTimeLayoutPreview() {
 
 @Preview(showBackground = true)
 @Composable
-fun TipTimeLayoutDarkPreview() {
+fun HomeScreenDarkPreview() {
     TipTimeTheme(darkTheme = true) {
         Surface {
-            HomeScreen(
-                openDrawer = {}
+            HomeBody(
+                appLanguage = AppLanguage.ENGLISH
             )
         }
     }
